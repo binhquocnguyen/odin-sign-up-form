@@ -134,6 +134,18 @@ input {
     margin-top: 0.3rem;
 }
 
+/* Only show invalid ring while not focused */
+input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: #ab3130;
+}
+
+/* Only show valid ring while not focused */
+input:not(:focus):not(:placeholder-shown):valid {
+    border-color: #7a9163;
+} 
+
+/* Reference: CSS-Tricks (https://css-tricks.com/snippets/css/form-validation-styling-on-input-focus/) */
+
 .form-container-right button {
     color: #fff;
     background-color: #222e4a;
