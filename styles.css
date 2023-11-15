@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+:root {
+    --h1-size: 40px;
+    --p-size: 16px;
+    --label-size: calc(var(--p-size) + 1px);
+    --input-size: calc(var(--label-size) + 0.5px);
+}
+
+a {
+    text-decoration: none;
+    font-size: var(--p-size);
+}
+
+h1 {
+    font-size: var(--h1-size);
+}
+
+p {
+    font-size: var(--p-size);
+}
+
+label {
+    font-size: var(--label-size);
+}
+
+input {
+    font-size: var(--input-size);
+}
+
+.form-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left side */
+.form-container-left {
+    flex-basis: 70%;
+    background-image: url(/images/camera-collection.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 0 15px;
+}
+
+.image-opacity {
+    width: 100%;
+    height: 25%;
+    background-color:rgba(1, 1, 1, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.image-opacity > h1 {
+    color:white; 
+    padding-left: 8px;
+    padding-top: 6px;
+    font-family: Garamond, serif;
+    text-transform: uppercase;
+    font-size: 48px;
+}
+
+.credit-camera-collection {
+    color: #f5f5f5;
+    background-color:rgba(1, 1, 1, 0.5);
+}
+
+.credit-camera-collection > a {
+    color: #f5f5f5;
+}
+
+.credit-camera-collection > a:hover {
+    color: #dcdcdc;
+    text-decoration: underline;
+}
+
+/* Right side */
+.form-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 3.6rem;
+    background-color: #F5F5F5;
+    color: #222e4a;
+}
+
+.form-container-right > :first-child {
+    margin-bottom: 1.5rem;
+}
+
+.caution {
+    font-style: italic;
+}
+
+.form {
+    display: flex;
+}
+
+.form > div {
+    flex-basis: 40%;
+    padding-right: 10%;
+}
+
+.form label {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.form input {
+    background-color: #fff;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 14px;
+}
+
+.form input:not(:last-child) {
+    margin: 0.3rem 0 1rem 0;
+}
+
+.form input:last-child {
+    margin-top: 0.3rem;
+}
+
+.form-container-right button {
+    color: #fff;
+    background-color: #222e4a;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.form-container-right button:hover {
+    background-color: #1b253b;
+}
+
+.form-container #log-in {
+    color: #222e4a;
+    font-weight: 600;
+}
+
+.form-container #log-in:hover {
+    color: #1b253b;
+    text-decoration: underline;
+}
